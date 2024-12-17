@@ -76,7 +76,7 @@
 
           project = pkgs.haskell-nix.cabalProject' {
             src = projectWithLocalHackage;
-            compiler-nix-name = "ghc966";
+            compiler-nix-name = "ghc966"; # << idk what version of ghc kubernetes-client supports
             index-state = "2024-10-09T22:38:57Z";
             inputMap = {
               "https://foo.org" = hackage;
